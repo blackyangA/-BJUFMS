@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     'django_filters',
-    'django_q',
     'rest_framework_simplejwt',
     'app_common',
     'app_files'
@@ -141,7 +140,7 @@ WSGI_APPLICATION = 'app_main.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mfs',  # 数据库名
+        'NAME': 'fms',  # 数据库名
         'USER': 'root',  # 用户名
         'PASSWORD': 'nihao@123',  # 密码
         'HOST': '139.224.192.64',
@@ -155,11 +154,11 @@ SUPER_X = {
     "user": 'root',
     "password": 'nihao@123',
     "cursorclass": pymysql.cursors.DictCursor,
-    "database": 'mfs',
+    "database": 'fms',
 }
 
 FMS = {
-    'database': 'mfs',
+    'database': 'fms',
     'charset': 'utf8',
     'sql_mode': 'PIPES_AS_CONCAT',
     'use_unicode': True,
